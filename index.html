@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELEMENTS SEARCHER</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: cursive;
+            text-align: center;
+            padding: 50px;
+
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+            font-size: 1em;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 1.5em;
+            border: 3px solid rgb(0, 0, 0);
+            background-color: rgb(222, 221, 221)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animated-background" style="border: 10px solid black;">
+
+        <script src="script.js"></script>
+        <div class="box" style="border: 5px solid black; margin: 195px;">
+            <h1>ELEMENTS SEARCHER</h1>
+            <p>ENTER AN atomic number TO GET the  ELEMENTS :</p>
+            <input type="number" id="atomicNumber" min="1" max="118" >
+            <button onclick="getElement()">Get Element</button>
+            <div class="result" id="result"></div>
+        </div>
+       
+    </div>
+</body>
+
+</html>
